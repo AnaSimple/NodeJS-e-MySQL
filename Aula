@@ -1,0 +1,33 @@
+Banco https://remotemysql.com/signup.php
+
+Username: 1YQrQvoS7Z
+
+Password: RAky7mxTqi
+
+Database Name: 1YQrQvoS7Z
+
+Server: remotemysql.com
+
+Port: 3306
+
+
+
+https://remotemysql.com/phpmyadmin/index.php
+
+
+pakage mysql
+pakage sha1 de criptografia 
+
+
+comando query acessa o comando do banco 
+connection.query('SELECT * FROM `usuario`'
+, function(err, rows, fields) {
+if (err){
+console.log ('error'
+, err.message, err.stack)
+}
+else{
+resposta.render(__dirname+'/views/listar.html', {usuarios:rows});
+}
+});
+});
